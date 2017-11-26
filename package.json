@@ -1,0 +1,25 @@
+{
+  "name": "ng-source-di",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "dev": "tsc -p tsconfig-dev.json",
+    "serve:dist": "rollup -c rollup.config.js && lite-server -c dist-bs-config.json",
+    "serve:dev": "tsc -p tsconfig-dev.json && lite-server -c dev-bs-config.json"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.10"
+  },
+  "devDependencies": {
+    "lite-server": "^2.3.0",
+    "rollup": "^0.51.7",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-typescript2": "^0.8.1",
+    "rollup-plugin-uglify": "^2.0.1",
+    "typescript": "~2.5.3",
+    "requirejs": "^2.3.5"
+  }
+}
