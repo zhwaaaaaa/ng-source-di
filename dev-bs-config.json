@@ -1,0 +1,10 @@
+{
+  "port": 8000,
+  "server": {
+    "baseDir": "./dev",
+    "routes": {
+      "/script/reflect-metadata.js": "node_modules/reflect-metadata/Reflect.js",
+      "/script/require.js": "node_modules/requirejs/require.js"
+    }
+  }
+}
